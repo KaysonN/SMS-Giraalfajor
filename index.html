@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
@@ -11,8 +11,9 @@
 </head>
 
 <body>
-    <header class="">
-        <div class="app-logo-container-contralizador">
+    <!-- inicio cabeçalho -->
+    <header>
+        <div class="app-logo-container-centralizador">
             <img src="imagens/logo.svg" alt="Giraalfajor" width="150px" height="">
             <h1>Giraalfajor</h1>
             <p>Desenvolvido por
@@ -20,6 +21,91 @@
             </p>
         </div>
     </header>
+    <!-- fim cabeçalho -->
+
+    <main>
+        <section id="class-vendas">
+            <!-- controla a largura -->
+            <div class="container-delimitador-largura">
+                <!-- card -->
+                <div class="app-card" style="color: black;">
+                    <h2 class="title-card">Vendas</h2>
+                    <!-- inputs de datas-->
+                    <div>
+                        <div class="container-form-person">
+                            <div><input class="form-person" type="text"></div>
+                        </div>
+
+                        <div class="container-form-person">
+                            <div><input class="form-person" type="text"></div>
+                        </div>
+                    </div>
+
+                    <!-- table -->
+                    <div>
+                        <table class="table-vendas">
+                            <thead>
+                                <th class="show992">ID</th>
+                                <th class="show576">Data</th>
+                                <th>Vendedor</th>
+                                <th class="show992">Visitas</th>
+                                <th class="show992">Vendas</th>
+                                <th>Total</th>
+                                <th>Notificar</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="show992">#001</td>
+                                    <td class="show576">08/07/2022</td>
+                                    <td>Carlos</td>
+                                    <td class="show992">15</td>
+                                    <td class="show992">11</td>
+                                    <td>R$ 100.00</td>
+                                    <td>
+                                        <div class="btn-container">
+                                            <div class="btn-send">
+                                                <img src="imagens/msg_icon.svg" alt="img">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="show992">#002</td>
+                                    <td class="show576">08/07/2022</td>
+                                    <td>Carlos</td>
+                                    <td class="show992">15</td>
+                                    <td class="show992">11</td>
+                                    <td>R$ 100.00</td>
+                                    <td>
+                                        <div class="btn-container">
+                                            <div class="btn-send">
+                                                <img src="imagens/msg_icon.svg" alt="img">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="show992">#003</td>
+                                    <td class="show576">08/07/2022</td>
+                                    <td>Carlos</td>
+                                    <td class="show992">15</td>
+                                    <td class="show992">11</td>
+                                    <td>R$ 100.00</td>
+                                    <td>
+                                        <div class="btn-container">
+                                            <div class="btn-send">
+                                                <img src="imagens/msg_icon.svg" alt="img">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
