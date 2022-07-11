@@ -1,12 +1,22 @@
+import Header from "./components/Header";
 import NotificationButton from "./components/NotificationButton";
+import SalesCard from "./components/SalesCard";
 
 function App() {
   return (
     <>
-      <h1>Opa!</h1>
+      <Header />
+      <main>
+        <section id="class-vendas">
+          <div className="container-delimitador-largura">
+            <SalesCard />
+          </div>
+        </section>
+      </main>
+
       <NotificationButton />
     </>
-  );
+  )
 
 
 }
