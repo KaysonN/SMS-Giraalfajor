@@ -1,4 +1,5 @@
-import icon from '../../assets/imagens/notification-icon.svg'
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
 import '../../index.css'
 import NotificationButton from '../NotificationButton'
 
@@ -9,11 +10,21 @@ function SalesCard() {
                 <h2 className="title-card">Vendas</h2>
                 <div>
                     <div className="container-form-person">
-                        <div><input className="form-person" type="text" /></div>
+                        <div><DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="form-person"
+                            dateFormat="dd/MM/yyyy"
+                        /></div>
                     </div>
 
                     <div className="container-form-person">
-                        <div><input className="form-person" type="text" /></div>
+                        <div><DatePicker
+                            selected={new Date()}
+                            onChange={(date: Date) => { }}
+                            className="form-person"
+                            dateFormat="dd/MM/yyyy"
+                        /></div>
                     </div>
                 </div>
                 <div>
