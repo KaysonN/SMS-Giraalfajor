@@ -47,6 +47,8 @@ header {
 
 .app-card {
     background-color: #E3E3B9;
+    /* background-image: url(/imagens/fundo-btn2.svg);
+    background-repeat:no-repeat; */
     border-radius: 19px;
     padding: 30px 10px;
 }
@@ -120,8 +122,6 @@ header {
 .btn-send {
     height: 45px;
     width: 45px;
-    /* background-image: url(/imagens/fundo-btn2.svg); */
-    /* background-repeat:no-repeat; */
     background: rgba(209, 166, 56, 0.628);
     border: 1px solid rgb(5, 5, 5);
     border-radius: 13px;
