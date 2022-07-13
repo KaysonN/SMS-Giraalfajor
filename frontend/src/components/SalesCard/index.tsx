@@ -17,18 +17,20 @@ function SalesCard() {
                 <h2 className="title-card">Vendas</h2>
                 <div>
                     <div className="container-form-person">
-                        <div><DatePicker
-                            selected={minDate}
-                            onChange={(date: Date) => setMinDate(date)}
-                            className="form-person"
-                            dateFormat="dd/MM/yyyy"
-                        /></div>
+                        <div>
+                            <DatePicker
+                                selected={minDate}
+                                onChange={(date: Date) => setMinDate(date)}
+                                className="form-person"
+                                dateFormat="dd/MM/yyyy"
+                            />
+                        </div>
                     </div>
 
                     <div className="container-form-person">
                         <div><DatePicker
                             selected={maxDate}
-                            onChange={(date: Date) =>setMaxDate(date)}
+                            onChange={(date: Date) => setMaxDate(date)}
                             className="form-person"
                             dateFormat="dd/MM/yyyy"
                         /></div>

@@ -8,6 +8,8 @@ public class GiraalfajorApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(GiraalfajorApplication.class, args);
+		
+		
 	}
 
 }
