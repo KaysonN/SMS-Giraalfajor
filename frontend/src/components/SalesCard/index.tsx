@@ -1,4 +1,5 @@
-import { useState } from "react";
+import axios from "axios";
+import { useEffect, useState } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import '../../index.css';
@@ -10,6 +11,15 @@ function SalesCard() {
 
     const [minDate, setMinDate] = useState(min);
     const [maxDate, setMaxDate] = useState(max);
+
+    // Executa algo quando o componente é montado e quando algum dado do mesmo se alterar,
+    // ou seja, quando mudar dado x, essa função executa
+    useEffect(() => {
+        axios.get("http://localhost:8080/sales/").then((response) => {
+            console.log(response.data);
+        })
+    }, []);
+
 
     return (
         <>
