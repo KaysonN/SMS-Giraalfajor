@@ -19,10 +19,14 @@ function SalesCard() {
     // Executa algo quando o componente é montado e quando algum dado do mesmo se alterar,
     // ou seja, quando mudar dado x, essa função executa
     useEffect(() => {
-        axios.get(`${BASE_URL}/sales`).then((response) => {
+
+        const dmin = minDate.toISOString().slice(0, 10);
+        const dmax = maxDate.toISOString().slice(0, 10);
+
+        axios.get(`${BASE_URL}/sales?minDate=${dmin}&maxDate=${dmax}`).then((response) => {
             setSales(response.data.content);
         })
-    }, []);
+    }, [minDate, maxDate]);
 
 
     return (
